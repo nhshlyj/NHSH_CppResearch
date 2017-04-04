@@ -125,6 +125,7 @@ void playGame() {
                 maze[playerY][playerX] = 2;
             }
         }
+
         printMaze(maze, h, w);
         if (playerX == endX && playerY == endY) {
             gotoxy(0, h + 1);
@@ -132,6 +133,7 @@ void playGame() {
             Sleep(1000);
             return ;
         }
+
         ch = getcha();
     }
 }
